@@ -1,112 +1,276 @@
-*{
+*
+{
+    
     box-sizing: border-box;
 }
-
-header
-{
-    font-family: 'Poppins', sans-serif;
-}
-.clear
+.clear  
 {
     clear: both;
 }
 
-.navigation-bar
-{
-width: 90%;
-margin: auto;
-margin-top: 20px;
-margin-bottom: 20px;
-}
-.text
-{
-    color: blue;
-    float: left;
-    font-weight: 700;
-    font-size: 34px;
-}
-.colortext
-{
-    color: aqua;
-    font-weight: 700;
-}
-.icofont-navigation-menu
-{
-    float: right;
-    color:grey;
-    font-size: 28px;
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
-.banner 
-{   height: 400.313px;
-    background-image: url("../images/1.jpg");
+.navigation
+{   width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+.navigation h1
+{
+    float: left;
+    font-size: 25px;
+    color: purple;
+}
+.icofont-exclamation-circle
+{
+    color: red;
+}
+.navigation h2
+{
+    float: right;
+    color: white;
+    background-color:lightgreen;
+    padding: 10px;
+}
+.banner
+{
+    background-image: url("../images/child-couple-cyclist.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    color: white;
 }
-.banner h2
-{   margin: auto;
-    letter-spacing: 2px;
-    width: 60%;
-    color: blue;
-    text-align: center;
-    padding-top: 20%;
-    font-weight: 700;
-    font-size: 34px;   
-}
-.banner-btns
+.caption
 {
-width: 70%;
-margin: auto;
-margin-top: 50px;
-display: flex;
-justify-content: center;
-}
-.banner a
-{   
-    border-radius: 2px;
+    width: 70%;
     text-align: center;
-    color:white;
-    padding: 20px;
-    text-decoration: none;
+    margin: auto;
+    font-size: 30px;
     font-weight: 700;
-    font-size: 100%;
+    padding-top: 10%;
+    padding-bottom: 30px;
+    padding-right: 0;
 }
-.underline
+.cap-para
 {
-    color: aqua;
-    text-decoration: underline;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size:20px;
+    font-weight: 300;
+    padding-bottom: 50px;
 }
-.banner2
-{   
-    margin-bottom: 40px;
-    margin-top: 40px;
-    height: 353.313px;
-    width: 90%;
-    background-image: url("../images/2.jpg");
+.find
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: grey;
+    background-color: white;
+    border-radius: 20px;
+}
+.popular-cities
+{
+    width: 100%;
+    background-color: purple;
+    color: white;
+    padding: 25px 0;
+
+}
+.popular-cities h1
+{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.popular-cities li
+{   font-weight: 300;
+    color: rgb(184, 184, 184);
+    padding-top: 10px;
+    text-align: center;
+}
+.volunteer
+{   padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: url("../images/dot-bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: 55%;
+    background-position:top right;
+    width: 100%;
 }
-.content1
+.vol-text
 {
-    height: 360px;
     width: 90%;
     margin: auto;
 }
-.content1 .head
-{   
-    font-weight: 700;
-    font-size: 34px;
-    color: blue;
-}
-.content1 .discription
+.vol-text h3
 {
-    font-style: italic;
-    line-height: 24px;
     color: grey;
-    font-size: 18px;;
-    padding-top: 30px;
+    font-size: 10px;
+    padding-bottom:15px;
 }
-.icofont-tick-mark
+.vol-text h1
+{
+    font-size: 30px;
+    color: purple;
+    padding-bottom: 15px;
+}
+.vol-text h2
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: grey;
+}
+.volun-items
+{
+    margin-top: 5px;
+padding-top: 40px;
+border-top: solid rgb(233, 222, 222) 2px;
+}
+.volun-items li
+{   width: 90%;
+    padding-bottom: 20px;
+    border-bottom: dotted grey 1px;
+    margin: auto;
+    padding-top: 10px;
+}
+.intrested
 {   
     padding-top: 30px;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: auto
+}
+.intrested h1
+{
+    float: left;
+    font-weight: bold;
+    font-size: 100%;
+}
+.intrested h2
+{   
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 4px;
+    float: right;
+}
+.ending
+{
+    background-color: purple;
+    width: 100%;
+    padding: 40px;
+    color: white;
+    font-weight: 300;
+}
+.ending h1
+{
+    width: 90%;
+    padding-bottom: 10px;
+    font-size: 120%;
+    margin: auto;
+    display: inline-block;
+}
+.ending h2
+{   
+    font-size: 110%;
+    text-decoration: underline;
+    display: inline-block;
+}
+.ending h3
+{   font-size: 110%;
+    display: inline-block;
+}
+
+
+@media(min-width:768px)
+{
+.navigation
+{
+    width: 70%;
+    margin: auto;
+    padding: 20px 0;
+}
+.banner .caption
+{
+    width: 70%;
+    text-align: left;
+    padding: initial;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.banner .cap-para
+{
+    width: 70%;
+    padding-right: 33%;
+    text-align: left;
+    padding: initial;
+    padding-bottom: 40px;
+}
+.find
+{   
+    width: 35%;
+    margin: initial;
+    margin-left: 15%;
+    text-align: left;
+}
+.find h4
+{   float: left;
+    padding-left: 10px;
+}
+.icofont-search-2
+{
+float: right;
+padding-right: 10px;
+}
+
+.txt
+{   
+
+    width: 60%;
+    margin:initial;
+    margin: auto;
+}
+.popular-cities
+{
+    text-align: center;
+}
+.popular-cities h1
+{   padding-left: 20px;
+    float: left;
+}
+.popular-cities li
+{
+    float: left;
+    padding: initial;
+    padding-left: 10px;
+}
+.volun-left-right
+{
+    width: 70%;
+    margin: auto;
+    background-image: url("../images/curve-bg.jpg");
+}
+.volunteer
+{
+    background-image: none;
+    float: left;
+    width: 40%;
+}
+.volun-items
+{   width: 40%;
+    float: left;
+    background-color: white;
+}
+.ending
+{
+    text-align: center;
+    font-size: 80%;
+    font-weight: 300;
+}
 }
